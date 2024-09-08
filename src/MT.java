@@ -25,7 +25,7 @@ public class MT {
 
     public static void main(String[] args) {
         int[] nums1 = {1, 3, 7, 1};
-        int[] nums2 = {4, 3, 1, 4};
+        int[] nums2 = {2, 3, 1, 4};
         int k = 3;
         System.out.println(minOperations(nums1, nums2, k)); // 输出应为1
     }
