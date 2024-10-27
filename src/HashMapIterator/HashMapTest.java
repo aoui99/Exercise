@@ -5,7 +5,7 @@ import java.util.*;
 public class HashMapTest {
     public static void main(String[] args) {
         // 创建并赋值 HashMap
-        Map<Integer, String> map = new HashMap();
+        HashMap<Integer, String> map = new HashMap();
         map.put(1, "Java");
         map.put(2, "JDK");
         map.put(3, "Spring Framework");
@@ -71,5 +71,21 @@ public class HashMapTest {
             System.out.println(entry.getKey());
             System.out.println(entry.getValue());
         });
+
+        LinkedList<Integer> intervals = new LinkedList<>();
+        intervals.add(1);
+        intervals.add(2);
+        intervals.add(4);
+        intervals.add(0);
+        intervals.add(45);
+        intervals.add(-1);
+        Collections.sort(intervals, Comparator.comparingInt(o -> o));
+        int value = intervals.removeFirst();
+        System.out.println(value);
+        Iterator<Integer> iterator3 = intervals.iterator();
+        while (iterator3.hasNext()) {
+            iterator3.remove();
+        }
+
     }
 }
